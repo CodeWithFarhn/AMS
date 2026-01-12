@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/main/resources/images/projectLOgo. jpeg" alt="AMS Logo" width="200">
+  <img src="src/main/resources/images/projectLOgo.jpeg" alt="AMS Logo" width="200">
   <h1>Assignment Management System (AMS)</h1>
   <p><strong>Streamlining Education through Technology</strong></p>
   <p>A comprehensive desktop application for managing academic assignments, courses, and grading.</p>
@@ -7,10 +7,10 @@
 
   <!-- Badges -->
   ![Java](https://img.shields.io/badge/Java-JDK%2022-ed8b00?style=flat&logo=openjdk&logoColor=white)
-  ![Swing](https://img.shields.io/badge/GUI-Java%20Swing-orange? style=flat&logo=java)
-  ![Maven](https://img.shields.io/badge/Build-Maven-C71A36? style=flat&logo=apachemaven&logoColor=white)
+  ![Swing](https://img.shields.io/badge/GUI-Java%20Swing-orange?style=flat&logo=java)
+  ![Maven](https://img.shields.io/badge/Build-Maven-C71A36?style=flat&logo=apachemaven&logoColor=white)
   ![Access](https://img.shields.io/badge/Database-MS%20Access-b7472a?style=flat&logo=microsoftaccess&logoColor=white)
-  ![License](https://img.shields.io/badge/License-MIT-blue? style=flat)
+  ![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
 
 </div>
 
@@ -82,7 +82,7 @@ This project was developed as a core coursework requirement for the **Object Ori
 ### Core Technologies
 
 | Technology | Version | Purpose |
-| :--- | :--- | : --- |
+| :--- | :--- | :--- |
 | **Java JDK** | 22 | Core Language & Runtime |
 | **Java Swing** | - | Graphical User Interface (GUI) |
 | **Maven** | 3.x | Dependency Management & Build Tool |
@@ -201,7 +201,6 @@ AMS/
 │   │       ├── application.properties
 │   │       └── logback.xml
 ├── target/                        # Build Artifacts
-├── AMS. accdb                      # Database File
 ├── database_schema.sql            # SQL Schema Definition
 ├── pom.xml                        # Project Dependencies
 └── README.md                      # Documentation
@@ -214,7 +213,7 @@ AMS/
 The database consists of 7 relational tables designed to minimize redundancy.
 
 | Table | Description |
-| :--- | : --- |
+| :--- | :--- |
 | **Users** | Base table for all user credentials (Admin, Teacher, Student). |
 | **Student** | Extension of Users, specific to student attributes. |
 | **Teachers** | Extension of Users, specific to teacher attributes. |
