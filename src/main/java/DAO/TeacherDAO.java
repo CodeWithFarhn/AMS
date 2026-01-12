@@ -126,7 +126,7 @@ public class TeacherDAO {
             connection = DatabaseConnection.getConnection();
             connection.setAutoCommit(false);
 
-            String getUserIdQuery = "SELECT userId FROM Teacher WHERE teachId = ?";
+            String getUserIdQuery = "SELECT userId FROM Teachers WHERE teachId = ?";
             PreparedStatement getUserIdStmt = connection.prepareStatement(getUserIdQuery);
             getUserIdStmt.setInt(1, teacherId);
             ResultSet rs = getUserIdStmt.executeQuery();
@@ -140,7 +140,7 @@ public class TeacherDAO {
             unassignCoursesStmt.setInt(1, teacherId);
             unassignCoursesStmt.executeUpdate();
 
-            String deleteTeacherQuery = "DELETE FROM Teacher WHERE teachId = ?";
+            String deleteTeacherQuery = "DELETE FROM Teachers WHERE teachId = ?";
             PreparedStatement deleteTeacherStmt = connection.prepareStatement(deleteTeacherQuery);
             deleteTeacherStmt.setInt(1, teacherId);
             deleteTeacherStmt.executeUpdate();
@@ -197,7 +197,7 @@ public class TeacherDAO {
      * @throws SQLException if a database access error occurs
      */
     public int getTeacherIdByUserId(int userId) throws SQLException {
-        String query = "SELECT teachId FROM Teacher WHERE userId = ?";
+        String query = "SELECT teachId FROM Teachers WHERE userId = ?";
         try (Connection connection = DatabaseConnection.getConnection();
                 PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, userId);
