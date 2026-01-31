@@ -245,6 +245,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <p>Made with ❤️ using Java & Maven</p>
-  <p>⭐ Star this repo if you find it helpful!</p>
+  <p>Built using Java, Maven, and MS Access</p>
 </div>
